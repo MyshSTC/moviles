@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:parcial/widgets/customcard.dart';
+import 'package:parcial2/widgets/customcard.dart';
 
 void main() {
   runApp(const MainApp());
@@ -36,16 +36,9 @@ class MainApp extends StatelessWidget {
                 },
               ),
               
-
-             Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "QUEMEN PERU ",
-                    style: TextStyle(fontSize: 14, color: const Color.fromARGB(255, 0, 0, 0)),
-                  ),
-                ],
-              ),
+              Text( "pajaros culiaos"),
+              const SizedBox(width: 20, height: 20),
+              
               
               Expanded(
                   child: Center(
@@ -200,12 +193,10 @@ class MainApp extends StatelessWidget {
                   physics: const AlwaysScrollableScrollPhysics(),
                   itemCount: 6,
                   itemBuilder: (context, index) {
-                    return CustomCard(
-                      title: 'Card Title ${index + 1}',
+                    return const CustomCard(
+                      title: 'Card Title',
                       subtitle: 'Card Subtitle',
                       icono: Icons.star,
-                      cardColor: index % 2 == 0 ? Colors.white : const Color(0xFFF5F5F5),
-                      iconColor: index % 2 == 0 ? Colors.blue : Colors.red,
                     );
                   },
                 ),
