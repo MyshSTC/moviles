@@ -1,0 +1,5 @@
+package com.example.tareas2
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity : FlutterActivity()
