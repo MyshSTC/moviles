@@ -104,15 +104,14 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(fontSize: 13, color: Colors.black87),
                       ),
                       const SizedBox(height: 8),
-                      //boton de adoptar
+              //boton de adoptar
                       Align(
-                        alignment: Alignment.bottomRight,
-                        child: ElevatedButton.icon(
-                          onPressed: () {},
-                          icon: const Icon(Icons.favorite, size: 16),
-                          label: const Text('Adoptar'),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.orange,
+                      alignment: Alignment.bottomRight,
+                      child: ElevatedButton.icon(onPressed: () {},
+                        icon: const Icon(Icons.favorite, size: 16),
+                        label: const Text('Adoptar'),
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.orange,
                             foregroundColor: Colors.white,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),
